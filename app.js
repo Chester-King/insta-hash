@@ -90,9 +90,9 @@ app.get('',(req,res)=>{
 	console.log("post");
 	await sleep(6000);
 
-	element = await page.$x(`//button/span`);
-	await element[0].click();
-    console.log("Initial Heart")
+	// element = await page.$x(`//button/span`);
+	// await element[0].click();
+    // console.log("Initial Heart")
 	
 	
 	console.log("Getting to the first post...");
