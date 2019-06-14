@@ -83,8 +83,8 @@ app.get('',(req,res)=>{
 	// element = await page.$x(`//ul`);
 	// await element[0].click();
 
-	await page.waitForSelector('.Nnq7C > .v1Nh3 > a > .qn-0x > .Ln-UN')
-  	await page.click('.Nnq7C > .v1Nh3 > a > .qn-0x > .Ln-UN')
+	await page.waitForSelector('.Nnq7C > .v1Nh3 > a')
+  	await page.click('.Nnq7C > .v1Nh3 > a')
 
 
 	console.log("post");
