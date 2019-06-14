@@ -116,10 +116,17 @@ app.get('',(req,res)=>{
 	
     
     for (step = 0; step < reqno; step++) {
+
+		try{
+
+		
         
         element = await page.$x(`//button/span`);
 	    await element[0].click();
-
+	}
+	catch(e){
+		console.log(step + "failed")
+	}
 
         element = await page.$x(`//a[contains(text(),'Next')]`);
         await element[0].click();
