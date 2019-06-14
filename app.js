@@ -80,8 +80,11 @@ app.get('',(req,res)=>{
 	await sleep(6000);
 
 
-	element = await page.$x(`//ul`);
-	await element[0].click();
+	// element = await page.$x(`//ul`);
+	// await element[0].click();
+
+	await page.waitForSelector('.Nnq7C > .v1Nh3 > a > .qn-0x > .Ln-UN')
+  	await page.click('.Nnq7C > .v1Nh3 > a > .qn-0x > .Ln-UN')
 
 
 	console.log("post");
