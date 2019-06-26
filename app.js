@@ -19,7 +19,7 @@ app.get('',(req,res)=>{
 
     
 (async () => {
-    const browser = await puppeteer.launch({ headless: false, defaultViewport: { width: 1920, height: 1080 }, args: ['--start-maximized'] });
+    const browser = await puppeteer.launch({ headless: false, defaultViewport: null, args: ['--start-maximized'] });
     const page = await browser.newPage();
     let element, formElement, tabs;
 
@@ -34,6 +34,8 @@ app.get('',(req,res)=>{
 	await element[0].type(user);
 
 	
+	console.log("Usename Entered");
+
 	await sleep(2000);
 
 	element = await page.$x(`//*[@name="password"]`);
@@ -43,11 +45,21 @@ app.get('',(req,res)=>{
 	await element[0].type(pass);
 
 	
+	console.log("Password Entered");
+
+
+	
 	await sleep(3000);
 
 	
 	element = await page.$x(`(.//*[normalize-space(text()) and normalize-space(.)='Show'])[1]/following::div[2]`);
 	await element[0].click();
+
+	
+	console.log("In case there is a suspicious login attempt \nYou have 2 minutes to entre the Code\nWaiting...");
+
+
+	await sleep(120000)
 
 	console.log("Accessing...");
 	await sleep(6000);
