@@ -1,0 +1,25 @@
+{
+  "name": "insta-hash",
+  "version": "1.0.0",
+  "description": "Likes N numbers of post on Instagram",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "i": "^0.3.6",
+    "puppeteer": "^1.18.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chester-King/insta-hash.git"
+  },
+  "author": "Madhur Dixit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chester-King/insta-hash/issues"
+  },
+  "homepage": "https://github.com/Chester-King/insta-hash#readme"
+}
