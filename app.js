@@ -114,18 +114,11 @@ app.get('', (req, res) => {
     console.log('Hash entered');
     await sleep(6000);
 
-    // element = await page.$x(`//ul`);
-    // await element[0].click();
-
     await page.waitForSelector('.Nnq7C > .v1Nh3 > a');
     await page.click('.Nnq7C > .v1Nh3 > a');
 
     console.log('post');
     await sleep(6000);
-
-    // element = await page.$x(`//button/span`);
-    // await element[0].click();
-    // console.log("Initial Heart")
 
     console.log('Getting to the first post...');
     while (true) {
