@@ -5,7 +5,7 @@
   "main": "app.js",
   "dependencies": {
     "express": "^4.17.1",
-    "i": "^0.3.6",
+    "i": "^0.3.7",
     "puppeteer": "^1.18.1"
   },
   "devDependencies": {},
